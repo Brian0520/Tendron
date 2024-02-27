@@ -4,6 +4,10 @@ public class Cluster
 
     public Cluster(int len, int x, int y)
     {
-        // your code here
+        color tone = color ((int)(Math.random()*255),(int)(Math.random()*255),(int)(Math.random()*255));
+        for(int i = 1; i < = NUM_STEMS; i++)
+    {
+    new Tendril(len,i*2*PI/NUM_STEMS,x,y,tone).show();
+    }
     }
 }
